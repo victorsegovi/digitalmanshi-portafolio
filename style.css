@@ -1,0 +1,594 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: hsla(0, 0%, 25%, 1);
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    background-color: hsla(0, 0%, 25%, 1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+header img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+header ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: hsla(0, 0%, 25%, 1);
+    top: 100%;
+    right: 0;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.15);
+    animation: appear 1s ease-in-out;
+}
+
+@keyframes appear{
+    0%{
+        top: -200%;
+    }
+
+    100%{
+        top: 100%;
+    }
+}
+
+header li a{
+    font-size: 18px;
+    color: #A2FBEA;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+    text-decoration: unset;
+    transition: .3s;
+}
+
+header i{
+    color: #A2FBEA;
+    font-size: 48px;
+}
+
+.bi-x{
+    display: none;
+}
+
+main{
+    padding: 100px 24px 0;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.digital-manshi-logo{
+    display: none;
+}
+
+.who-we-are{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    font-size: 24px;
+    color: hsla(169, 91%, 51%, 1);
+}
+
+p{
+    font-size: 16px;
+    color: hsla(0, 0%, 95%, 1);
+}
+
+#buttonWa, #whatsapp{
+    width: 100%;
+    padding: 16px 24px;
+    border: unset;
+    background-color: hsla(169, 91%, 31%, 1);
+    color: hsla(0, 0%, 95%, 1);
+    margin-top: 16px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: unset;
+    text-align: center;
+    max-width: 352px;
+    transition: .3s;
+}
+
+.buttonWaIcon{
+    background-color: unset;
+    margin-right: 16px;
+}
+
+.home p{
+    margin-top: 16px;
+}
+
+.about-us{
+    margin-top: 40px;
+    padding-top: 120px;
+}
+
+.toshio{
+    width: 100%;
+}
+
+.toshio-img{
+    display: none;
+}
+
+.about-us h2{
+    margin-top: 24px;
+}
+
+.about-us p{
+    margin-top: 16px;
+}
+
+.about-us h3{
+    font-size: 18px;
+    color: hsla(169, 91%, 51%, 1);
+    margin-top: 24px;
+}
+
+.empresas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.empresas img{
+    margin: 24px 4px 0;
+}
+
+#ademas{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+#ademas span{
+    font-weight: bold;
+    color: #10f4ca;
+}
+
+h4{
+    font-size: 12px;
+    color: hsla(169, 91%, 51%, 1);
+    margin-top: 40px;
+}
+
+.metrica{
+    margin-top: 16px;
+    width: 100%;
+}
+
+.video-testimonial{
+    width: 100%;
+    height: 314px;
+    border-radius: 12px;
+}
+.testimonials{
+    padding-top: 80px;
+}
+
+.testimonial{
+    text-align: center;
+}
+
+.testimonials h2{
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.testimonial-1{
+    margin-top: 16px;
+}
+
+.testimonials p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 40px 0;
+    font-style: italic;
+}
+
+.testimonials span{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto h2{
+    text-align: center;
+}
+
+#whatsapp{
+    background: linear-gradient(271.11deg, #0ADBB4 0%, #07977C 97.91%);
+    max-width: 352px;
+    margin: 16px auto;
+}
+
+footer{
+    background-color: hsla(0, 0%, 25%, 1);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+li{
+    display: inline;
+    font-size: 12px;
+    margin: 0 4px;
+}
+
+footer h4{
+    font-weight: 300;
+    color: #F5FFFD;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+footer h3{
+    font-weight: 400;
+    color: #10F4CA;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer ul{
+    margin-bottom: 8px;
+}
+
+footer li, footer a{
+    color: #F5FFFD;
+    text-decoration: unset;
+}
+
+footer i, footer img{
+    margin-right: 2px;
+}
+
+header li a:hover{
+    color: #10F4CA;
+}
+
+header li a:active{
+    color: #07977C;
+}
+
+#buttonWa:hover{
+    background-color: #09C8A4;
+}
+
+#buttonWa:active{
+    background-color: #056654;
+}
+
+#whatsapp{
+    transition: 1s;
+}
+
+#whatsapp:hover{
+    background-size: 400%;
+    background-position: -50%;
+}
+
+#whatsapp:active{
+    background-size: 500%;
+    background-position: unset;
+}
+
+@media screen and (min-width: 400px) {
+    h1, h2{
+        font-size: 26px;
+    }
+
+    .about-us h3{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    #ademas{
+        font-size: 14px;
+    }
+
+    .testimonials h2{
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .empresas img:last-child{
+        margin: 24px auto 0;
+    }
+
+    .toshio{
+        display: none;
+    }
+
+    .toshio-img{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px){
+    h1, h2{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    #ademas{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:576px) {
+    h1, h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+
+    h4, #ademas{
+        font-size: 18px;
+    }
+
+    .empresas img:last-child{
+        margin: 24px 0 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .bi-list{
+        display: none;
+    }
+
+    header ul{
+        position: unset;
+        display: block;
+        width: unset;
+        top: unset;
+        right: unset;
+        box-shadow:unset;
+        animation: unset;
+    }
+
+    header li a{
+        font-size: 18px;
+        color: #A2FBEA;
+        font-weight: bold;
+        margin: 0 8px;
+        display: inline;
+        width: unset;
+    }
+
+    h1, h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .home{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .who-we-are{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .digital-manshi-logo{
+        display: block;
+    }
+
+    .digital-manshi-logo img{
+        max-height: 246px;
+    }
+
+    .about-us{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .toshio-img{
+        width: 50%;
+        max-height: 188px;
+        max-width: 276px;
+    }
+
+    .acerca-de h2{
+        margin: 0;
+    }
+
+    .empresas img{
+        margin: 0;
+    }
+
+    .empresas img:last-child{
+        margin: 0;
+    }
+
+    .social-proof{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .empresas{
+        margin-top: 24px;
+    }
+
+    #ademas{
+        margin: 48px auto 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .about-us h2, h1{
+        font-size: 26px;
+    }
+
+    .about-us p, .home p{
+        font-size: 18px;
+    }
+
+    .toshio-img{
+        max-width: 326px;
+        max-height: 220px;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    h1, .about-us h2{
+        font-size: 28px;
+    }
+
+    .about-us h3{
+        font-size: 22px;
+    }
+
+    .about-us p, .home p, #ademas, h4, p{
+        font-size: 20px;
+    }
+
+    .testimonials h2{
+        font-size: 20px;
+    }
+
+    .toshio-img{
+        max-width: 350px;
+        max-height: 236px;
+    }
+
+    .digital-manshi-logo img{
+        max-width: 276px;
+        max-height: 276px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .testimonial{
+        display: flex;
+        align-items: center;
+        margin: 40px 0;
+        justify-content: space-between;
+    }
+
+    .testimonial-1, .testimonial-3{
+        flex-direction: row-reverse;
+    }
+
+    .testimonial video{
+        max-width: 45%;
+    }
+
+    header, main{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header, main{
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .home h1, .about-us h2{
+        font-size: 30px;
+    }
+
+    .home p, .about-us p{
+        font-size: 22px;
+    }
+
+    .toshio-img{
+        max-height: unset;
+        max-width: unset;
+    }
+
+    .about-us{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .home h1, .about-us h2{
+        font-size: 36px;
+    }
+
+    .digital-manshi-logo img{
+        max-width: 348px;
+        max-height: 348px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    header, main{
+        padding-left:15%;
+        padding-right: 15%;
+    }
+}
