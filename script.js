@@ -33,7 +33,7 @@ if(platform.name == 'Safari' || platform.name == 'Chrome Mobile'){
 
     videoChefSafari.style.display = 'block';
     videoCirujanoSafari.style.display = 'block';
-}else{
+}else if (platform.name == 'Firefox'){
     videoChefWeb.style.display = 'block';
     videoCirujanoWeb.style.display = 'block';
 
